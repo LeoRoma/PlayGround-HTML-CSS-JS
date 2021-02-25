@@ -6,12 +6,13 @@
 
 .main{
     position: relative;
-    margin: auto;
-    top: 25%;
-    width: 600px;
-    height: 400px;
+    /* margin: auto; */
+    top: 30%;
+    width: 300px;
+    height: 200px;
     transition: 3s;
     cursor: pointer;
+    left: 40%;
 }
 
 .main img{
@@ -31,11 +32,11 @@
 
 .move-image-and-resize{
     margin: 0%;
-    left: 100px;
-    top: 100px;
+    left: 50px;
+    /* top: 10%; */
    
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
 }
 
 .none{
@@ -46,11 +47,11 @@
     position: absolute;
     width: 100%;
     height: 0;
-    border: sienna solid;
+    /* border: sienna solid; */
     background-color: lightgray;
     bottom: 0;
     left: 0;
-    transition: 2s;
+    transition: 1s;
     z-index: -2;
     clip-path: circle(5%);
 }
@@ -67,15 +68,17 @@
     margin: auto;
     position: relative;
     /* text-align: center; */
-    top: 10%;
+    top: 35%;
+    left: 8%;
     /* animation-name: slideInDown;
     animation-duration: 1s;
     animation-delay: 1s; */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    border: magenta solid;
+    /* border: magenta solid; */
     width: 25%;
+    /* object-position: center(0 20%); */
 }
 
 .open{
