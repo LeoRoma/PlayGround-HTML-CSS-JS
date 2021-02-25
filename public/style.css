@@ -1,5 +1,128 @@
+.container{
+    height: 100vh;
+    box-sizing: border-box;
+    border: salmon solid;
+}
+
 .main{
-    width: 200px;
-    height: 200px;
-    border: saddlebrown solid;
+    position: relative;
+    margin: auto;
+    top: 25%;
+    width: 600px;
+    height: 400px;
+    transition: 3s;
+    cursor: pointer;
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 
+.main:hover{
+    margin: 0%;
+    top: 10%;
+    left: 10%;
+    width: 400px;
+    height: 300px;
+} */
+
+.move-image-and-resize{
+    margin: 0%;
+    left: 100px;
+    top: 100px;
+   
+    width: 400px;
+    height: 300px;
+}
+
+.none{
+    display: none;
+}
+
+.width-zero{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border: sienna solid;
+    background-color: lightgray;
+    bottom: 0;
+    left: 0;
+    transition: 2s;
+    z-index: -2;
+    clip-path: circle(5%);
+}
+
+/* .width-zero img{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 400px;
+    height: 300px;
+} */
+
+.text{
+    margin: auto;
+    position: relative;
+    /* text-align: center; */
+    top: 10%;
+    /* animation-name: slideInDown;
+    animation-duration: 1s;
+    animation-delay: 1s; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: magenta solid;
+    width: 25%;
+}
+
+.open{
+    height: 100%;
+    clip-path: circle(100%);
+}
+.slide-bottom{
+    position: relative;
+    right: -1000px;
+    /* position: relative; */
+    width: 100%;
+}
+
+.slide-bottom:nth-child(1){
+    transition: 2s;
+}
+.slide-bottom:nth-child(2){
+    transition: 2.5s;
+}
+.slide-bottom:nth-child(3){
+    transition: 3s;
+}
+.slide-bottom:nth-child(4){
+    transition: 3.5s;
+}
+
+.cazzeggio{
+    position: relative;
+    transition: 4s;
+    width: 100%;
+    right: -1000px;
+}
+
+.animate {
+    animation-name: slideInDown;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+
+.color{
+    color:black;
+    right: 0px;
+}
+
+
+@keyframes slideInDown{
+    from {top: -1000px;}
+    to {top: 20%;}
 }
