@@ -2,6 +2,7 @@
     border: black solid;
     margin: auto;
     position: relative;
+    display:list-item;
 }
 
 .number-container{
@@ -11,13 +12,13 @@
     top: 50%;
     width: 50px;
     height: 50px;
-    border: red solid;
-    transition: 3s;
+    border: black solid;
+    transition: 1s;
     /* transform: translate(350px,0); */
 }
 
 .move-left{
     /* left:50%; */
-    transform: translate(350px,0);
+    transform: translate(350px,200px);
 }
 
