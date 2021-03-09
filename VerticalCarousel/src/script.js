@@ -13,9 +13,11 @@ let cardIndex = 0;
 
 buttonUp.addEventListener('click', () => {
     console.log('hello');
-    if(cardIndex < cardContainerLength){
+   
         console.log("hi")
         cardIndex++;
-        track.style.transform = `translateY(-${cardIndex} * ${carouselContainerHeight}px)`;
-    }
+        let moveY = cardIndex + carouselContainerHeight
+        track.style.transform = `translateY(-${moveY}px)`;
+        console.log(`translateY(${cardIndex} * ${carouselContainerHeight}px)`)
+    
 })
