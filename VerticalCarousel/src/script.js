@@ -16,8 +16,10 @@ buttonUp.addEventListener('click', () => {
    
         console.log("hi")
         cardIndex++;
-        let moveY = cardIndex + carouselContainerHeight
+        let moveY = cardIndex * carouselContainerHeight
         track.style.transform = `translateY(-${moveY}px)`;
-        console.log(`translateY(${cardIndex} * ${carouselContainerHeight}px)`)
-    
+        console.log(`translateY(-${moveY}px)`)
+    // if(cardIndex === cardContainerLength){
+    //     cardIndex = 0
+    // }
 })
