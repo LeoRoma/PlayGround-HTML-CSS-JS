@@ -1,11 +1,26 @@
 .carousel-container{
+    position: relative;
     border: black solid;
     height: 100px;
     overflow: hidden;
+    /* display:; */
+    transition: transform 0.5s;
+}
+
+.track{
+    position: relative;
+    flex-direction: column;
+    border: blue solid;
 }
 
 .card-container{
+    position: relative;
     width: 100%;
     height: 100px;
     border: red solid;
+    flex-direction: column;
+}
+
+.button-up{
+    cursor: pointer;
 }
