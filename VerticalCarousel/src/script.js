@@ -10,9 +10,18 @@ const cardContainerRightLength = document.querySelectorAll('.card-container-righ
 const sliderLeft = document.querySelector('.slider-left');
 const sliderRight = document.querySelector('.slider-right');
 
-let cardIndex = 0;
 
-sliderLeft.style.top = `-${(cardContainerRightLength - 1) * carouselContainerHeight}px`;
+const carouselContainerLeft = document.querySelector('.carousel-container-left');
+const carouselContainerLeftHeight = carouselContainerLeft.clientHeight;
+
+
+const text = document.querySelectorAll('.image-wrapper h1');
+console.log(text[0])
+
+let cardIndex = 0;
+let textIndex = 2;
+sliderLeft.style.top = `-${(cardContainerRightLength - 1) * carouselContainerLeftHeight}px`;
+
 
 buttonUp.addEventListener('click', () => {
     if (cardIndex === cardContainerRightLength - 1) {
@@ -20,8 +29,12 @@ buttonUp.addEventListener('click', () => {
     }
     cardIndex++;
     sliderRight.style.transform = `translateY(-${cardIndex * carouselContainerHeight}px)`;
-    sliderLeft.style.transform = `translateY(${cardIndex * carouselContainerHeight}px)`;
-})
+    sliderLeft.style.transform = `translateY(${cardIndex * carouselContainerLeftHeight}px)`;
+    textIndex--;
+    console.log(textIndex)
+    text[textIndex].style.transform = "translateX(400px)";
+    text[textIndex + 1].style.transform = "translateX(0px)";
+})  
 
 buttonDown.addEventListener('click', () => {
     if (cardIndex === 0) {
@@ -29,5 +42,8 @@ buttonDown.addEventListener('click', () => {
     }
     cardIndex--;
     sliderRight.style.transform = `translateY(-${cardIndex * carouselContainerHeight}px)`;
-    sliderLeft.style.transform = `translateY(${cardIndex * carouselContainerHeight}px)`;
+    sliderLeft.style.transform = `translateY(${cardIndex * carouselContainerLeftHeight}px)`;
+    textIndex++;
+    text[textIndex].style.transform = "translateX(400px)";
+    text[textIndex - 1].style.transform = "translateX(0px)";
 })

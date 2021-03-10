@@ -1,18 +1,23 @@
+.carousels-wrapper{
+    border: red solid;
+    /* display: flex; */
+}
+
 .carousel-container{
     position: relative;
-    margin: auto;
+    /* margin: auto; */
     border: black solid;
     height: 100px;
     overflow: hidden;
-    width: 100%;
+    width: 30%;
+    margin-left: 70%;
+    margin-top: 20%;
     /* display:; */
 }
 
 .slider-right{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
+   
+    width: 100%;
     /* display: inline-flex; */
 
     /* transform: translateY(-100px); */
@@ -22,20 +27,7 @@
     box-sizing:border-box;
 }
 
-.slider-left{
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    width: 50%;
-    /* display: inline-flex; */
 
-    /* transform: translateY(-100px); */
-    transition: transform 0.5s;
-    box-sizing:border-box;
-    display: flex;
-    flex-direction: column;
-}
 
 .card-container-right{
     position: relative;
@@ -45,13 +37,7 @@
     box-sizing:border-box;
 }
 
-.card-container-left{
-    position: relative;
-    width: 100%;
-    height: 100px;
 
-    box-sizing:border-box;
-}
 
 .navigation-button{
     border: blueviolet solid;
@@ -70,4 +56,62 @@
 
 .button-down{
     cursor: pointer;
+}
+
+
+.carousel-container-left{
+    position: absolute;
+    margin-top: -20%;
+    left: 10%;
+    border: cadetblue solid;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-container{
+    padding-top: 100px;
+    margin: auto;
+    /* border: chartreuse solid; */
+    width: 50%;
+    height: 400px;
+  
+}
+
+.image-wrapper{
+    border: chocolate solid;
+    box-sizing: border-box;
+}
+
+.image-container img{
+    width: 100%;
+    height: 200px;
+}
+
+.slider-left{    
+    position: absolute;
+    width: 100%;
+    /* display: inline-flex; */
+
+    /* transform: translateY(-100px); */
+    transition: transform 0.5s;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-container-left{
+    position: relative;
+    width: 100%;
+    height: 100px;
+
+    box-sizing:border-box;
+}
+
+.image-wrapper h1{
+    position: absolute;
+    border: hotpink solid;
+    left: -200px;
+    transition: 0.5s;
 }
