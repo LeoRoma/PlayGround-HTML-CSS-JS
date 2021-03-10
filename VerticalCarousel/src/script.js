@@ -9,17 +9,28 @@ console.log(cardContainerLength)
 const carouselContainerHeight = carouselContainer.clientHeight;
 console.log(carouselContainerHeight)
 
-let cardIndex = 0;
+let cardIndex = 1;
+
 
 buttonUp.addEventListener('click', () => {
-    console.log('hello');
-   
-        console.log("hi")
-        cardIndex++;
-        let moveY = cardIndex * carouselContainerHeight
-        track.style.transform = `translateY(-${moveY}px)`;
-        console.log(`translateY(-${moveY}px)`)
-    // if(cardIndex === cardContainerLength){
-    //     cardIndex = 0
-    // }
+    console.log(cardIndex);
+    if (cardIndex === cardContainerLength) {
+        cardIndex = 1
+    }
+    let moveY = cardIndex * carouselContainerHeight;
+    track.style.transform = `translateY(-${moveY}px)`;
+
+    cardIndex++;
+})
+
+buttonDown.addEventListener('click', () => {
+    console.log(cardIndex);
+    if (cardIndex === 0) {
+        cardIndex = cardContainerLength
+    }
+    cardIndex--;
+    let moveY = cardIndex * carouselContainerHeight;
+    track.style.transform = `translateY(-${moveY}px)`;
+
+    
 })
