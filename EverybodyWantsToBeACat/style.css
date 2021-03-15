@@ -5,32 +5,111 @@
     width: 100%;
     border: black solid;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     box-sizing: border-box;
 }
 
 .brick{
-    transition: 5s;
+    transition: 0.5s;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .brick:nth-child(1){
     /* left: 50%; */
     border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+    object-fit: contain;
 }
 
 .brick:nth-child(2){
     /* left: 100%; */
     border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
 }
 
 .brick:nth-child(3){
     /* left: 50%; */
     border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
 }
 
 .brick:nth-child(4){
     /* left: 100%; */
     border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(5){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(6){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(7){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(8){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(9){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+    object-fit: contain;
+}
+
+.brick:nth-child(10){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(11){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(12){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(13){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(14){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(15){
+    /* left: 50%; */
+    border: springgreen solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
+}
+
+.brick:nth-child(16){
+    /* left: 100%; */
+    border: yellow solid;
+    background-image: url("https://media.giphy.com/media/XJT5XLZARM6wo/source.gif");
 }
