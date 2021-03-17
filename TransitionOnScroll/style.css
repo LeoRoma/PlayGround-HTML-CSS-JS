@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.header{
+    border: red solid;
+}
+
+.first-section{
+    border: blue solid;
+}
+
+.news-container{
+    border: black solid;
+    height: 100vh;
+}
+
+.second-section{
+    border: green solid;
+}
+
+.gallery-container{
+    border: yellow solid;
+    height: 100vh;
+}
+
+.image{
+    opacity: 0;
+    transition: 1s;
+}
+
+.align-right{
+    float: right;
+    transform: translateX(50%) scale(0.50);
+}
+
+.align-left{
+    float: left;
+    position: absolute;
+    top: 150%;
+    transform: translateX(-50%) scale(0.50);
+}
+
+.active{
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
