@@ -34,4 +34,9 @@ function checkSlide(e){
     })
 }
 
+function scrollExample(){
+    console.log(window.scrollY)
+}
+
 window.addEventListener('scroll', debounce(checkSlide))
+// window.addEventListener('scroll', debounce(scrollExample))
