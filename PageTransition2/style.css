@@ -1,0 +1,24 @@
+.menu{
+    border: black solid;
+    display: flex;
+    height: 50px;
+    background-color: black;
+    /* text-align: right; */
+}
+
+.menu-item{
+    position: relative;
+    top: 30%;
+    margin-right: 10px;
+    /* order:3; */
+    list-style-type: none;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: blue;
+}
