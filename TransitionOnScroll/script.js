@@ -41,15 +41,19 @@ function scrollExample(){
 window.addEventListener('scroll', debounce(checkSlide))
 // window.addEventListener('scroll', debounce(scrollExample))
 
-// function printLetterByLetter(destination, message, speed){
-//     var i = 0;
-//     var interval = setInterval(function(){
-//         document.getElementById(destination).innerHTML += message.charAt(i);
-//         i++;
-//         if (i > message.length){
-//             clearInterval(interval);
-//         }
-//     }, speed);
-// }
+function printLetterByLetter(destination, message, speed){
+    var i = 0;
+    var interval = setInterval(function(){
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            clearInterval(interval);
+        }
+    }, speed);
+}
 
-// printLetterByLetter("letter-one-by-one", "Hello world, bonjour le monde.", 100);
+printLetterByLetter("letter-one-by-one", "Hello world, bonjour le monde.", 100);
+
+// const fillDiv = document.querySelector('.letter-one-by-one');
+// fillDiv.classList.add('scroll');
+

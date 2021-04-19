@@ -45,3 +45,49 @@ body{
     opacity: 1;
     transform: translateX(0%) scale(1);
 }
+
+
+.fill-div{
+    border: black solid;
+    transition: 2s ease-in-out;
+    width: 0;
+    transform: translateY(0%);
+}
+
+.is-active{
+    width:100%;
+    transform: translateY(100%);
+}
+
+.scroll{
+    transform-origin: 0px 100% 0px;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    border: 1px solid blue;
+    overflow: hidden;;
+}
+
+.text{
+    position: relative;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.menu{
+    position: absolute;
+    margin: auto;
+    height: 40px;
+    background-color: chartreuse;
+    border: chartreuse solid;
+    width: 0;
+    top: 0;
+    transition: 1s ease-in-out;
+}
+
+.menu:hover{
+    width: 30%;
+    top: 90%;
+}
