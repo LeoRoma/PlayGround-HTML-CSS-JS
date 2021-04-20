@@ -44,73 +44,50 @@ body{
 .active{
     opacity: 1;
     transform: translateX(0%) scale(1);
+} 
+
+
+
+
+
+.highlight{
+    display: inline-block;
 }
 
-
-.fill-div{
-    border: black solid;
-    transition: 2s ease-in-out;
-    width: 0;
-    transform: translateY(0%);
-}
-
-.is-active{
-    width:100%;
-    transform: translateY(100%);
-}
-
-.scroll{
-    transform-origin: 0px 100% 0px;
-}
-
-.container{
-    
+.title{
     position: relative;
-    /* margin: auto; */
-    /* border: 1px solid blue; */
+    /* overflow: hidden; */
+}
+
+.title-span{
+
+    background-color: coral;
+    content: '';
+    position:absolute;
     width: 0;
-    /* width: 0; */
-    height:fit-content;
-    transition: 1s ease-in-out;
-    overflow: hidden;
-}
-
-.text{
-    position: relative;
-    box-sizing: border-box;
-    /* margin: auto; */
-    /* border: 1px solid red; */
-    width:fit-content;
-    height:fit-content;
-    visibility:hidden;
-}
-
-.menu{
-    position: absolute;
-    margin: auto;
     height: 40px;
-    box-sizing: border-box;
-    background-color: chartreuse;
-    border: chartreuse solid;
-    width: 0;
-    top: 0;
-    transition: 1s ease-in-out;
-    
-    height: 100%;
+    left: 0;
+    /* transform-origin: left; */
+    z-index: 1;
+    transition: 1s;
 }
 
-.open{
-    width:fit-content;
-    /* width: 100%; */
+.scroll-down{
+
+    transform: matrix(1, 0, 0, 0.1, 0, 5);
 }
 
-.scroll{
+.scroll-right{
+    transform-origin: 0px 100% 0px;
     width: 100%;
 }
 
-.down{
-    top: 90%;
+
+.title-text{
+    visibility: hidden;
+    font-size: 38px; 
 }
+
 
 .show{
     visibility: visible;

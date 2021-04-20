@@ -30,6 +30,7 @@ function checkSlide(e){
             image.classList.add('active');
         }else{
             image.classList.remove('active');
+            // removeTextScroll()
         }
     })
 }
@@ -54,14 +55,24 @@ function printLetterByLetter(destination, message, speed){
 
 printLetterByLetter("letter-one-by-one", "Hello world, bonjour le monde.", 100);
 
-const container = document.querySelector('.container');
-const text = document.querySelector('.text');
-const menu = document.querySelector('.menu');
 
-container.classList.add('open');
-menu.classList.add('scroll');
 
-setTimeout(() => {
-    text.classList.add('show');
-    menu.classList.add('down');
-},1000)
+
+const span = document.querySelector('.title-span');
+const text = document.querySelector('.title-text');
+
+
+function addTextScroll(){
+    span.classList.add('scroll-right')
+    setTimeout(() => {
+        span.classList.add('scroll-down');
+        text.classList.add('show');
+    },1000)
+}
+
+function removeTextScroll(){
+    span.classList.remove('scroll-down');
+    text.classList.remove('show');
+    span.classList.remove('scroll-right')
+}
+addTextScroll()
