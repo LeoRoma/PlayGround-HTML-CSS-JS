@@ -54,6 +54,14 @@ function printLetterByLetter(destination, message, speed){
 
 printLetterByLetter("letter-one-by-one", "Hello world, bonjour le monde.", 100);
 
-// const fillDiv = document.querySelector('.letter-one-by-one');
-// fillDiv.classList.add('scroll');
+const container = document.querySelector('.container');
+const text = document.querySelector('.text');
+const menu = document.querySelector('.menu');
 
+container.classList.add('open');
+menu.classList.add('scroll');
+
+setTimeout(() => {
+    text.classList.add('show');
+    menu.classList.add('down');
+},1000)
