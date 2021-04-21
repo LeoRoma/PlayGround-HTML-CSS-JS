@@ -50,7 +50,15 @@ a:hover{
     font-size: 50px;
     top: 20%;
     transition: 1s;
+    transform: translateY(0);
+    animation: appear 1s;
+    animation-delay: 0.5s;
+}
 
+@keyframes appear {
+  0%{transform: translateY(100%);} 
+  /* 50%{transform: translateY(50%);}  */
+  100%{transform: translateY(0%);} 
 }
 
 .banner-inner h3{

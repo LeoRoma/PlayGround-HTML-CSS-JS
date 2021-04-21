@@ -10,31 +10,23 @@ window.onload = () => {
     for (let i = 0; i < anchors.length; i++) {
         const anchor = anchors[i];
 
-
         anchor.addEventListener('click', e => {
             e.preventDefault();
+  
             let target = e.target.href;
 
-            // transitionEl.classList.add('is-active');
+            transitionEl.classList.add('is-active');
             text.style.top = "100%"
 
-            console.log(text), "hi";
             setTimeout(() => {
+                // window.location.assign(target);
                 window.location.href = target;
+                // window.location.replace(target);
+                // window.history.replaceState('', '', target);
+              
             }, 500)
         })
-
-
     }
 }
-
-const text = document.querySelector('.banner-inner h1');
-
-text.addEventListener('click', e =>{
-    e.preventDefault();
-    console.log("hello")
-    text.classList.add('hide');
-    
-})
 
 
