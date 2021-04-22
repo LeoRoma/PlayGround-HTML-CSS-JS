@@ -17,13 +17,9 @@ window.onload = () => {
 
             transitionEl.classList.add('is-active');
             text.style.top = "100%"
-
+            
             setTimeout(() => {
-                // window.location.assign(target);
                 window.location.href = target;
-                // window.location.replace(target);
-                // window.history.replaceState('', '', target);
-              
             }, 500)
         })
     }
