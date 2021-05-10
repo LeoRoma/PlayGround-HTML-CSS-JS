@@ -17,11 +17,9 @@ function displayCurrentProject(title, description) {
     clearLocalStorage();
 }
 
-
 function clearLocalStorage() {
     localStorage.clear();
 }
-
 
 // const projectsHolder = document.querySelector('.projects-holder');
 const projects = [...projectsData];
@@ -29,3 +27,6 @@ const projects = [...projectsData];
 document.addEventListener('DOMContentLoaded', function () {
     getCurrentProject();
 })
+
+//tutorial for passing data between pages
+//https://www.youtube.com/watch?v=GNZg1KRsWuU
