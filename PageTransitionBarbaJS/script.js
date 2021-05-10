@@ -11,9 +11,6 @@ function displayProjects(projects){
     projectsHolder.innerHTML = p;
 }
 
-
-
-
 displayProjects(projects);
 // displayProjects(projects);
 
