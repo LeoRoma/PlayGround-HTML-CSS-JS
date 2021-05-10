@@ -8,13 +8,18 @@ function displayProjects(projects){
     const p = projects.map((project, index) => {
         
         return `
-            <a href="${projectPage.html}"><h1 data-index="${index}">${project.title}</h1></a>
+            <h1 class="title" data-index="${index}">${project.title}</h1>
             <p>${project.description}</p>
         `
     }).join(" ");
     projectsHolder.innerHTML = p;
 }
 window.onload = function(){
-    displayProjects(projects);
+    const title = document.querySelector('.title');
+    title.addEventListener("click", () => {
+        console.log("hi")
+        window.location.href = "projectPage.html";
+    })
 }
+displayProjects(projects);
 // displayProjects(projects);
