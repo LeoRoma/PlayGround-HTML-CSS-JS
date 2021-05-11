@@ -12,7 +12,7 @@ const upperText = document.querySelectorAll('.upper-text span.char');
 const lowerText = document.querySelectorAll('.lower-text span.char');
 console.log(upperText)
 
-textOnHover.addEventListener('mouseover', () => {
+textOnHover.addEventListener('mouseenter', () => {
     // let delay = 0;
     // lowerText.forEach(letter => {
     //     console.log(letter)
@@ -28,7 +28,7 @@ textOnHover.addEventListener('mouseover', () => {
 })
 
 
-textOnHover.addEventListener('mouseout', () => {
+textOnHover.addEventListener('mouseleave', () => {
     animateCharsOut()
 })
 
