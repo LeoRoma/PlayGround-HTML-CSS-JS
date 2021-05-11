@@ -21,18 +21,18 @@ body{
 .perspective-line{
     width: 100%;
     bottom: 0;
-    height: 220px;
+    height: 250px;
     overflow: hidden;
-    /* border: blue solid; */
+    border: blue solid;
     perspective: 800px;
-    perspective-origin: -50%;
+    perspective-origin: -70%;
 }
 
 p{
     margin: 0;
-    height: 90px;
+    /* height: 90px; */
     line-height: 90px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
     /* border: green solid; */
 
 }
