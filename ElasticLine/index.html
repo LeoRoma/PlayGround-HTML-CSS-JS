@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <h1>Elastic Line</h1>
-    <svg id="svg" width="400" height="300" viewbox="0 0 500 500" id="svg">
+    <svg id="svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+        <!-- preserveAspectRatio="xMidYmid meet" -->
              <!-- starting point x/y - modifies the line - end point x/y -->
-        <path id="curve" d="M0,250 Q250,250 500,250" fill="none" stroke="#401f52" stroke-width="4" />
+        <path id="curve" d="M250,0 Q250,250 250,500"/>
     </svg>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
