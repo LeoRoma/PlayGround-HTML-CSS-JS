@@ -12,16 +12,16 @@ body{
     margin-top: 15%;
     color: white;
     font-family: Arial;
-    font-size: 235px;
+    font-size: 13vw;
     font-weight: 900;
     /* letter-spacing: -4px; */
     text-transform: uppercase;
     /* border: hotpink solid; */
 }
 .perspective-line{
-    width: 100%;
+    /* width: 100%; */
     bottom: 0;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     border: blue solid;
     perspective: 800px;
@@ -32,13 +32,13 @@ p{
     margin: 0;
     /* height: 90px; */
     line-height: 90px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     /* border: green solid; */
 
 }
 
 p:nth-child(odd){
-    transform: rotateX(0deg) translateY(-100%);
+    transform: rotateX(0deg) translateY(-250%);
     opacity: 0;
 }
 
