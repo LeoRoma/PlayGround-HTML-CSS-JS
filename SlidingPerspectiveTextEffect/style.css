@@ -9,40 +9,68 @@ body{
 .perspective-text{
     width: 100%;
     position: relative;
-    margin-top: 15%;
-    color: white;
-    font-family: Arial;
-    font-size: 13vw;
-    font-weight: 900;
+
     /* letter-spacing: -4px; */
     text-transform: uppercase;
     /* border: hotpink solid; */
 }
 .perspective-line{
     /* width: 100%; */
-    bottom: 0;
-    height: 200px;
+    /* bottom: 0; */
+    height: 170px;
     overflow: hidden;
-    border: blue solid;
-    perspective: 800px;
-    perspective-origin: -70%;
+    /* border: blue solid; */
 }
 
-p{
+h1{
+    margin-top: 15%;
+    color: white;
+    font-family: Arial;
+    
+    font-weight: 900;
     margin: 0;
+    font-size: 12vw;
     /* height: 90px; */
-    line-height: 90px;
+    line-height: 50px;
     transition: all 0.5s ease-in-out;
     /* border: green solid; */
+    perspective: 1000px;
+	perspective-origin: -150% 50%;
 
 }
 
-p:nth-child(odd){
-    transform: rotateX(0deg) translateY(-250%);
+h1:nth-child(odd){
+    /* transform: rotateX(90deg) translateY(0%); */
+    /* opacity: 0; */
+}
+
+.upper-text .char{
+    /* transform: rotateX(90deg) translateY(0%); */
     opacity: 0;
 }
 
-p:nth-child(even){
-    transform: translateY(-50%);
+h1:nth-child(even){
+    transform: translateY(0);
+    /* opacity: 0; */
 }
 
+.lower-text .char{
+    transform-origin: 0% 0%;
+	will-change: transform;
+}
+
+/* .lower-text .char {
+    animation: slide-down 2s forwards;
+    animation-delay: calc(.5s + (.1s * var(--char-index)));
+    opacity: 0; 
+}
+@keyframes slide-down{
+    from {
+        transform: translateY(125%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+} */
