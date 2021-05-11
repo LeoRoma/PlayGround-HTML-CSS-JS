@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Elastic Line</title>
 </head>
+
 <body>
     <h1>Elastic Line</h1>
-    <svg>
-        <path></path>
+    <svg id="svg" width="400" height="300" viewbox="0 0 500 500" id="svg">
+             <!-- starting point x/y - modifies the line - end point x/y -->
+        <path id="curve" d="M0,250 Q250,250 500,250" fill="none" stroke="#401f52" stroke-width="4" />
     </svg>
+
     <script src="script.js"></script>
 </body>
+
 </html>
