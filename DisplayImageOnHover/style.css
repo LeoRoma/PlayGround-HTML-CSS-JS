@@ -1,17 +1,19 @@
 .projects-list{
-    border: blue solid;
+    /* border: blue solid; */
 }
 
 .project{
     position: relative;
-    border: black 1px solid;
+    border: black transparent;
     z-index: 0;
-    /* position: absolute; */
+    /* height: 50px; */
+    height: auto;
 }
 
-.project-title{
-    /* position:absolute; */
-    /* top: 50%; */
+h3{
+    font-size: 40px;
+    margin: 0px;
+    display: inline-block;
 }
 
 .image{
@@ -30,4 +32,10 @@
     z-index: 0;
     /* top:83px;
     left:140px */
+}
+
+.line{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: block;
 }

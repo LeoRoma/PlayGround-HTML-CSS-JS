@@ -1,13 +1,7 @@
 const projects = document.querySelectorAll('.project');
-console.log(projects);
-const projectImages = document.querySelectorAll('.project-image');
-console.log(projectImages)
-
 
 const img = document.querySelectorAll('.image-test');
-console.log(img[0])
 
-// setInterval(followMouse, 50);
 let imageCoords = {
     x: 0,
     y: 0
@@ -24,13 +18,6 @@ function getMouseCoords(event){
 }
 
 function followMouse(index){
-    // let distX = mouseCoords.x - imageCoords.x;
-    // let distY = mouseCoords.y - imageCoords.y;
-
-    // imageCoords.x += distX / 5;
-    // imageCoords.y += distY /2; 
-    console.log("x: ", mouseCoords.x);
-    console.log("y: ", mouseCoords.y);
     img[index].style.left = mouseCoords.x + "px";
     img[index].style.top = mouseCoords.y + "px";
 }
@@ -40,6 +27,7 @@ for(let i = 0; i < projects.length; i++){
     project.addEventListener('mouseenter', () => {
         img[i].style.display = "block";
         img[i].style.opacity = "1";
+        // img[i].style.zIndex = "1";
     })
 
     project.addEventListener('mousemove', (event) => {
@@ -54,6 +42,4 @@ for(let i = 0; i < projects.length; i++){
     })
 }
 
-
-// document.addEventListener('mousemove', getMouseCoords);
 
