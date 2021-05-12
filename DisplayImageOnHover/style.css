@@ -3,5 +3,18 @@
 }
 
 .project{
+    position: relative;
     border: green solid;
+    /* position: absolute; */
+}
+
+.project-title{
+    /* position:absolute; */
+    /* top: 50%; */
+}
+
+.project-image{
+    opacity: 0;
+    transition: 0.5 ease-in-out;
+    height: 100px;
 }
