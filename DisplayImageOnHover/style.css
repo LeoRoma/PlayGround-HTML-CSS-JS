@@ -13,8 +13,9 @@
     /* top: 50%; */
 }
 
-.project-image{
-    opacity: 0;
+.image{
+    opacity: 1;
     transition: 0.5 ease-in-out;
     height: 100px;
+    position: absolute;
 }
