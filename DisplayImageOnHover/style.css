@@ -3,13 +3,18 @@
     src: url("fonts/DrukCond-Super.ttf");
   }
 
+.name-holder{
+    position: relative;
+    margin-top: -490px;
+}
+
 .name{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     font-family: DrukCond;
     font-weight: 900;
-    font-size: 400px;
+    font-size: 36vw;
     border: gray solid;
 }
 
