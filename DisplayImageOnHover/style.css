@@ -1,3 +1,18 @@
+@font-face {
+    font-family: DrukCond;
+    src: url("fonts/DrukCond-Super.ttf");
+  }
+
+.name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: DrukCond;
+    font-weight: 900;
+    font-size: 400px;
+    border: gray solid;
+}
+
 .projects-list{
     /* border: blue solid; */
 }
@@ -16,17 +31,10 @@ h3{
     display: inline-block;
 }
 
-.image{
-    opacity: 1;
-    transition: 0.5 ease-in-out;
-    height: 100px;
-    position: absolute;
-}
-
 .image-test{
-    display: hidden;
+    /* display: hidden; */
     opacity: 0;
-    transition: 0.5 ease-in-out;
+    /* transition: 0.5s ease-in-out; */
     height: 200px;
     position: absolute;
     z-index: 0;
