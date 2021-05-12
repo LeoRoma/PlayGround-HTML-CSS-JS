@@ -10,21 +10,9 @@ const textOnHover = document.querySelector('.perspective-line');
 
 const upperText = document.querySelectorAll('.upper-text span.char');
 const lowerText = document.querySelectorAll('.lower-text span.char');
-console.log(upperText)
 
 textOnHover.addEventListener('mouseenter', () => {
-    // let delay = 0;
-    // lowerText.forEach(letter => {
-    //     console.log(letter)
-    //     letter.style.style.opacity = "1";
-    //     letter.style.animationDelay = `${delay}ms`;
-
-    //     delay += 20;
-    // })
-    // upperText.style.transform = "translateY(100%)";
-    // upperText.style.opacity = "1";
     animateCharsIn();
-    console.log("hello")
 })
 
 
