@@ -4,7 +4,8 @@
 
 .project{
     position: relative;
-    border: green solid;
+    border: black 1px solid;
+    z-index: 0;
     /* position: absolute; */
 }
 
@@ -18,4 +19,15 @@
     transition: 0.5 ease-in-out;
     height: 100px;
     position: absolute;
+}
+
+.image-test{
+    display: hidden;
+    opacity: 0;
+    transition: 0.5 ease-in-out;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    /* top:83px;
+    left:140px */
 }
