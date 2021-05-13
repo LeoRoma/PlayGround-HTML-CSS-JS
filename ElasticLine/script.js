@@ -1,26 +1,38 @@
-const path = document.querySelector('path');
+gsap.defaults({ease: "elastic(1, 0.01)"});
 
-let coords = {
-    x: 0,
-    y: 0
-}
+let svg  = document.querySelector("svg");
+let path = document.querySelector("path");
 
-let width = 0;
+let connected = false;
+let snapDist = 10;
+let startY = 10;
 
-document.addEventListener('mousemove', (event) => {
-    coords.x = event.clientX;
-    coords.y = event.clientY;
+let mouseCoords = {y: startY};
 
-    width = coords.x / window.innerWidth;
-    updateCoords(coords);
-})
+svg.addEventListener("mousemove", onMove);
 
-document.addEventListener('mouseout', event => {
-    gsap.to(path, {ease: Elastic.easeOut.config(1,0,3), attr: {d: "M250,0 Q250,250 250,500"}})
-})
+gsap.ticker.add(update);
+update();
 
-function updateCoords(coords){
-    coords.x = width * 500
-    path.setAttribute('d', `M250,0 Q${coords.x},${coords.y} 250,500`)
+function update() {
+    let d = `M0,10 Q50,${mouseCoords.y} 100,10`;
     
-}
+    path.setAttribute("d", d);
+    
+    if (Math.abs(mouseCoords.y - startY) > snapDist * 2) {        
+      connected = false;
+      gsap.to(mouseCoords, { duration: 1,  y: startY });
+    }  
+  }
+
+function onMove(event) {
+    console.log(event)
+    if (!connected && event.target === path) {    
+      connected = true;    
+      gsap.killTweensOf(p1);
+    }
+    
+    if (connected) {    
+        mouseCoords.y = event.pageY * 2 - (mouseCoords.y + mouseCoords.y) / 2;    
+    }
+  }
