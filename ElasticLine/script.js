@@ -4,7 +4,7 @@ let svg  = document.querySelector("svg");
 let path = document.querySelector("path");
 
 let connected = false;
-let snapDist = 10;
+let snapDist = 5;
 let startY = 10;
 
 let mouseCoords = {y: startY};
@@ -26,7 +26,6 @@ function update() {
   }
 
 function onMove(event) {
-    console.log(event)
     if (!connected && event.target === path) {    
       connected = true;    
       gsap.killTweensOf(p1);
