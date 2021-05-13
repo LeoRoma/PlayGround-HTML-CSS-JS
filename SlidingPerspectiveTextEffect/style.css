@@ -1,3 +1,8 @@
+@font-face {
+    font-family: DrukCond;
+    src: url("DrukCond-Super.ttf");
+}
+
 body{
     display: flex;
     align-items: center;
@@ -17,7 +22,7 @@ body{
 .perspective-line{
     /* width: 100%; */
     /* bottom: 0; */
-    height: 170px;
+    height: 500px;
     overflow: hidden;
     /* border: blue solid; */
 }
@@ -25,13 +30,13 @@ body{
 h1{
     margin-top: 15%;
     color: white;
-    font-family: Arial;
+    font-family: DrukCond;
     
     font-weight: 900;
     margin: 0;
-    font-size: 12vw;
+    font-size: 35vw;
     /* height: 90px; */
-    line-height: 50px;
+    line-height: 150px;
     transition: all 0.5s ease-in-out;
     /* border: green solid; */
     perspective: 1000px;
