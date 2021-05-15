@@ -4,7 +4,7 @@ let svg  = document.querySelector("svg");
 let path = document.querySelector("path");
 
 let connected = false;
-let snapDist = 5;
+let snapDist = 5
 let startY = 10;
 
 let mouseCoords = {y: startY};
