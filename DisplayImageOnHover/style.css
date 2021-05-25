@@ -20,7 +20,6 @@
 
 .projects-list{
     position: relative;
-    /* border: blue solid; */
     width: 100%;
 }
 
@@ -28,9 +27,7 @@
     position: relative;
     border: black transparent;
     z-index: 0;
-    /* height: 50px; */
     height: auto;
-    /* border: pink solid; */
 }
 
 h3{
@@ -40,21 +37,11 @@ h3{
 }
 
 .image-test{
-    /* display: hidden; */
     opacity: 0;
-    /* transition: 0.5s ease-in-out; */
     height: 200px;
     position: absolute;
     z-index: 1;
     pointer-events: none;
-    /* top:83px;
-    left:140px */
-}
-
-.line{
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    display: block;
 }
 
 .svg-container{
@@ -66,7 +53,7 @@ h3{
 #svg {
     position: absolute;
     width: 100%;
-    height: 30px;
+    height: 100%;
     top: 0;
     left: 0;
     margin: 0;

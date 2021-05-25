@@ -30,14 +30,12 @@ function checkSlide(e){
             image.classList.add('active');
         }else{
             image.classList.remove('active');
-            // removeTextScroll()
         }
     })
 }
 
 
 window.addEventListener('scroll', debounce(checkSlide))
-// window.addEventListener('scroll', debounce(scrollExample))
 
 function printLetterByLetter(destination, message, speed){
     var i = 0;

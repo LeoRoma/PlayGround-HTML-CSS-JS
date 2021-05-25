@@ -5,7 +5,7 @@ let paths = document.querySelectorAll("path");
 
 
 let connected = false;
-let snapDist = 10;
+let snapDist = 5;
 let startY = 10;
 
 let mousePosition = { y: startY };
