@@ -26,7 +26,7 @@ barba.init({
         async leave(data) {
             const done = this.async();
             pageTransition();
-            await delay(1500);
+            await delay(500);
             done();
         },
 

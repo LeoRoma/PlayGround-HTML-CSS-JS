@@ -2,6 +2,7 @@ window.onload = () => {
     const transitionEl = document.querySelector('.transition');
     const anchors = document.querySelectorAll('a');
     const text = document.querySelector('.hide-text h1');
+    console.log(transitionEl)
 
     setTimeout(() => {
         transitionEl.classList.remove('is-active');
