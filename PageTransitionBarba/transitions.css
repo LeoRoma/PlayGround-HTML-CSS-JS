@@ -10,19 +10,3 @@
     transition: 0.5s ease-out;
 }
 
-
-/* .transition-3{
-    position: fixed;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: 100%;
-    z-index: 101;
-    background-color: tomato;
-
-    transition: 0.5s ease-out;
-}
-
-.transition-3.is-active{
-    top: 0px;
-} */

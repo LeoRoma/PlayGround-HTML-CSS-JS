@@ -1,5 +1,3 @@
-// const transitionEl = document.querySelector('.transition');
-// transitionEl.classList.remove('is-active');
 
 
 function pageTransition() {
@@ -7,8 +5,6 @@ function pageTransition() {
     tl.to('.hide-text h1', {duration: .3, translateY: 100})
     tl.to('.transition', {duration: .5, translateX: '100%'})
     tl.to('.transition', {duration: .5, translateX: 0, delay: 1})
-    // transitionEl.classList.add('is-active');
-    // console.log(transitionEl)
 }
 
 function contentAnimation() {
