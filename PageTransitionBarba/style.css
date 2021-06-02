@@ -51,7 +51,7 @@ a:hover{
     transition: 1s;
     transform: translateY(0);
     animation: appear 1s;
-    animation-delay: 0.5s;
+    /* animation-delay: 0.5s; */
 }
 
 @keyframes appear {
