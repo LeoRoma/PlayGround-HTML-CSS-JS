@@ -23,19 +23,15 @@ a:hover{
 }
 
 .banner{
-    /* border: violet solid;     */
     position: relative;
     box-sizing: border-box;
 }
 
 .banner-inner{
-    /* margin: auto; */
-    /* position: relative; */
     background-image: url("https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
     height: 400px;
     text-align: center;
     box-sizing: border-box;
-    /* border: black solid; */
 }
 
 .hide-text{
@@ -51,12 +47,10 @@ a:hover{
     transition: 1s;
     transform: translateY(0);
     animation: appear 1s;
-    /* animation-delay: 0.5s; */
 }
 
 @keyframes appear {
   0%{transform: translateY(100%);} 
-  /* 50%{transform: translateY(50%);}  */
   100%{transform: translateY(0%);} 
 }
 
