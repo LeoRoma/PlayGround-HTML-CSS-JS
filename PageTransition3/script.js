@@ -12,7 +12,6 @@ function displayProjects(projects){
 }
 
 displayProjects(projects);
-// displayProjects(projects);
 
 window.onload = function(){
     const titles = document.querySelectorAll('.title');

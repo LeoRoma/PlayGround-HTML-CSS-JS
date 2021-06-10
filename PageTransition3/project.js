@@ -21,7 +21,7 @@ function clearLocalStorage() {
     localStorage.clear();
 }
 
-// const projectsHolder = document.querySelector('.projects-holder');
+
 const projects = [...projectsData];
 
 document.addEventListener('DOMContentLoaded', function () {
