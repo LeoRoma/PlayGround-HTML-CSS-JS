@@ -117,7 +117,6 @@
 }
 
 .brick:nth-child(11){
-    /* left: 50%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,7 +127,6 @@
 }
 
 .brick:nth-child(12){
-    /* left: 100%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +137,6 @@
 }
 
 .brick:nth-child(13){
-    /* left: 50%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,7 +147,6 @@
 }
 
 .brick:nth-child(14){
-    /* left: 100%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,7 +157,6 @@
 }
 
 .brick:nth-child(15){
-    /* left: 50%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +167,6 @@
 }
 
 .brick:nth-child(16){
-    /* left: 100%; */
     background-image: url("./fa5636e57996a29097c6ff7e5b8b9b06.jpg");
     background-size: cover;
     background-repeat: no-repeat;
